@@ -1130,7 +1130,7 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
 [2026-03-02 18:08:28,360] INFO [src.utils:19] Saving model to /home/infres/zzhu-24/PRIM/VLM2Vec/experiments/public/exps/train/2Mar_Qwen3VL4B_28_14_mlp05_recalculate_impt-Qwen/Qwen3-VL-4B-Instruct/checkpoint-500
 Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
 [2026-03-02 18:08:31,038] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
-  3%|▎         | 512/14700 [3:06:46<86:09:52, 21.86s/it]
+  4%|▎         | 516/14700 [3:08:14<86:23:33, 21.93s/it]
 {'loss': 0.3635, 'grad_norm': 27.476390838623047, 'learning_rate': 9.725342465753426e-06, 'epoch': 0.03}
 [2026-03-02 18:08:53,194] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
 {'loss': 0.1432, 'grad_norm': 16.064844131469727, 'learning_rate': 9.724657534246576e-06, 'epoch': 0.03}
@@ -1155,3 +1155,57 @@ Trainer.tokenizer is now deprecated. You should use Trainer.processing_class ins
 [2026-03-02 18:12:31,641] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
 {'loss': 0.3968, 'grad_norm': 27.687118530273438, 'learning_rate': 9.717808219178083e-06, 'epoch': 0.03}
 [2026-03-02 18:12:53,618] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.2072, 'grad_norm': 23.700519561767578, 'learning_rate': 9.717123287671234e-06, 'epoch': 0.03}
+[2026-03-02 18:13:15,324] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.1883, 'grad_norm': 27.678014755249023, 'learning_rate': 9.716438356164384e-06, 'epoch': 0.03}
+[2026-03-02 18:13:36,886] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.1338, 'grad_norm': 15.036508560180664, 'learning_rate': 9.715753424657535e-06, 'epoch': 0.04}
+[2026-03-02 18:13:59,297] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.5346, 'grad_norm': 49.399757385253906, 'learning_rate': 9.715068493150685e-06, 'epoch': 0.04}
+[2026-03-02 18:14:21,185] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.2665, 'grad_norm': 33.46443557739258, 'learning_rate': 9.714383561643837e-06, 'epoch': 0.04}
+[2026-03-02 18:14:43,038] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.2824, 'grad_norm': 27.473804473876953, 'learning_rate': 9.713698630136987e-06, 'epoch': 0.04}
+[2026-03-02 18:15:05,033] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.8662, 'grad_norm': 40.31515121459961, 'learning_rate': 9.713013698630138e-06, 'epoch': 0.04}
+[2026-03-02 18:15:26,811] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.2312, 'grad_norm': 32.85730743408203, 'learning_rate': 9.712328767123288e-06, 'epoch': 0.04}
+[2026-03-02 18:15:48,366] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.2122, 'grad_norm': 24.317481994628906, 'learning_rate': 9.711643835616439e-06, 'epoch': 0.04}
+[2026-03-02 18:16:10,165] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.1402, 'grad_norm': 15.479667663574219, 'learning_rate': 9.710958904109589e-06, 'epoch': 0.04}
+[2026-03-02 18:16:31,996] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.2413, 'grad_norm': 30.887561798095703, 'learning_rate': 9.710273972602741e-06, 'epoch': 0.04}
+[2026-03-02 18:16:53,775] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.358, 'grad_norm': 28.9632511138916, 'learning_rate': 9.709589041095891e-06, 'epoch': 0.04}
+[2026-03-02 18:17:15,769] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.1423, 'grad_norm': 17.395320892333984, 'learning_rate': 9.708904109589042e-06, 'epoch': 0.04}
+[2026-03-02 18:17:37,389] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.1857, 'grad_norm': 18.649188995361328, 'learning_rate': 9.708219178082192e-06, 'epoch': 0.04}
+[2026-03-02 18:17:59,157] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.2776, 'grad_norm': 25.15080451965332, 'learning_rate': 9.707534246575343e-06, 'epoch': 0.04}
+[2026-03-02 18:18:21,184] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.1687, 'grad_norm': 20.387224197387695, 'learning_rate': 9.706849315068495e-06, 'epoch': 0.04}
+[2026-03-02 18:18:42,716] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.1801, 'grad_norm': 18.13100242614746, 'learning_rate': 9.706164383561645e-06, 'epoch': 0.04}
+[2026-03-02 18:19:04,804] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.3364, 'grad_norm': 28.959497451782227, 'learning_rate': 9.705479452054795e-06, 'epoch': 0.04}
+[2026-03-02 18:19:26,769] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.1669, 'grad_norm': 24.28949546813965, 'learning_rate': 9.704794520547946e-06, 'epoch': 0.04}
+[2026-03-02 18:19:48,789] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.0913, 'grad_norm': 12.981525421142578, 'learning_rate': 9.704109589041096e-06, 'epoch': 0.04}
+[2026-03-02 18:20:10,677] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.3416, 'grad_norm': 32.577449798583984, 'learning_rate': 9.703424657534247e-06, 'epoch': 0.04}
+[2026-03-02 18:20:32,854] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.1375, 'grad_norm': 14.044923782348633, 'learning_rate': 9.702739726027399e-06, 'epoch': 0.04}
+[2026-03-02 18:20:54,581] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.099, 'grad_norm': 13.570160865783691, 'learning_rate': 9.702054794520549e-06, 'epoch': 0.04}
+[2026-03-02 18:21:16,809] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.3064, 'grad_norm': 28.797271728515625, 'learning_rate': 9.7013698630137e-06, 'epoch': 0.04}
+[2026-03-02 18:21:38,565] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.1802, 'grad_norm': 26.05336570739746, 'learning_rate': 9.70068493150685e-06, 'epoch': 0.04}
+[2026-03-02 18:22:00,389] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.3601, 'grad_norm': 29.08268165588379, 'learning_rate': 9.7e-06, 'epoch': 0.04}
+[2026-03-02 18:22:22,442] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.
+{'loss': 0.1305, 'grad_norm': 15.319012641906738, 'learning_rate': 9.69931506849315e-06, 'epoch': 0.04}
+[2026-03-02 18:22:44,333] WARNING [src.trainer:574] Tried to track the number of tokens seen, however the current model is not configured properly to know what item is the input. To fix this, add a `main_input_name` attribute to the model class you are using.

@@ -75,9 +75,9 @@ logger = logging.get_logger(__name__)
 
 def get_base_model_param_count(model) -> Optional[int]:
     """
-    统计纯基座模型参数（不含 LoRA adapter）。
-    若 encoder 为 PeftModel 则只计 base_model；否则计整个 encoder。
-    非本项目的模型结构时返回 None。
+    Count the number of parameters in the base encoder (excluding LoRA adapters).
+    If the encoder is a PeftModel, only the underlying base_model is counted; otherwise the whole encoder is counted.
+    Returns None for models that do not follow this project's encoder structure.
     """
     unwrapped = model.module if hasattr(model, "module") else model
     if not hasattr(unwrapped, "encoder"):
@@ -91,9 +91,9 @@ def get_base_model_param_count(model) -> Optional[int]:
 
 def get_detailed_param_breakdown(model) -> dict:
     """
-    按图像编码、merger、LLM 细分基座参数。
-    返回 dict: image_encoder, merger, llm, other, lora_total（若适用）。
-    若结构不支持（无 visual/model）则返回空 dict。
+    Provide a detailed parameter breakdown of the base encoder into image encoder, merger, and LLM parts.
+    Returns a dict: image_encoder, merger, llm, other, and lora_total (if applicable).
+    If the structure is not supported (e.g., missing visual/model attributes), an empty dict is returned.
     """
     unwrapped = model.module if hasattr(model, "module") else model
     if not hasattr(unwrapped, "encoder"):
