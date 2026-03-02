@@ -556,7 +556,8 @@ def main():
         adapter_config_path = os.path.join(model_args.checkpoint_path, 'adapter_config.json')
         if os.path.exists(adapter_config_path):
             logger.info(f"Found LoRA adapter in checkpoint_path, loading model with trained weights from {model_args.checkpoint_path}")
-            model = MMEBModel.load(model_args, is_trainable=False)
+            # For importance computation we need gradients, so keep the model trainable
+            model = MMEBModel.load(model_args, is_trainable=True)
         else:
             logger.info(f"No LoRA adapter found in checkpoint_path, building base model without LoRA")
             model = MMEBModel.build(model_args)
