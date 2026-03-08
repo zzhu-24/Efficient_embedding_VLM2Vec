@@ -27,7 +27,8 @@ BATCH_SIZE=8
 # MODEL_TYPE="28Jan_Qwen3VL4B_rmv_30_23-Qwen"
 # MODEL_TYPE="3Feb_Qwen3VL4B_rmv_30_23_lora24-Qwen"
 # MODEL_TYPE="16Feb_Qwen3VL4B_28_14_mlp05-Qwen"
-MODEL_TYPE="19Feb_Qwen3VL2b_original_train_all-Qwen"
+# MODEL_TYPE="19Feb_Qwen3VL2b_original_train_all-Qwen"
+MODEL_TYPE="2Mar_Qwen3VL4B_28_14_mlp05_recalculate_impt-Qwen"
 
 # EVAL_TYPE="eval_after_train"
 # DATA_CONFIG_PATH="experiments/public/eval/retrieval.yaml"
@@ -40,15 +41,15 @@ DATA_CONFIG_PATH="experiments/public/eval/image_all.yaml"
 
 
 
-BASE_MODEL="Qwen3-VL-2B-Instruct"
+BASE_MODEL="Qwen3-VL-4B-Instruct"
 CHECKPOINT_LIST=(
   # "checkpoint-1000"
   # "checkpoint-2000"
   # "checkpoint-3000"
   # "checkpoint-4000"
-  "checkpoint-4500"
+  # "checkpoint-4500"
   # "checkpoint-5000"
-  # "checkpoint-5500"
+  "checkpoint-5500"
   # "checkpoint-6000"
   # "checkpoint-9000"
 )
@@ -103,13 +104,13 @@ for spec in "${MODEL_SPECS[@]}"; do
       --encode_output_path "$OUTPUT_PATH" \
       --data_basedir "$DATA_BASEDIR" \
       --delete_L 28 \
-      --delete_n 0 \
+      --delete_n 14 \
+      --mlp_prune_ratio 0.5 \
+      --mlp_importance_path "/home/infres/zzhu-24/PRIM/VLM2Vec/importance_output_ckpt5500/[28]_[14]_mlp_importance.json" \
       --eval_layers -1 \
       --checkpoint_path "$CKPT_PATH" \
       &> "$OUTPUT_PATH/eval.log"
-      # --mlp_prune_ratio 0.5 \
-      # --mlp_importance_path "/home/infres/zzhu-24/PRIM/VLM2Vec/importance_output/[28]_[14]_mlp_importance.json" \
-
+      
     # Cleanup
     echo " ➤ Cleaning temporary files under $OUTPUT_PATH"
     find "$OUTPUT_PATH" -maxdepth 2 -type f \( \
